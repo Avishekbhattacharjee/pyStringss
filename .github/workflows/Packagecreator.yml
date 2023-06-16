@@ -29,3 +29,7 @@ jobs:
         with:
           username: ${{ secrets.PYPI_USERNAME }}
           password: ${{ secrets.PYPI_PASSWORD }}
+          repository_url: https://upload.pypi.org/legacy/
+          packages_dir: dist
+          verify_metadata: false
+          skip_existing: true

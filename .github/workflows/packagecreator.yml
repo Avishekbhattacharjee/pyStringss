@@ -1,4 +1,4 @@
-name: Package Creator
+name: Packagecreator
 
 on:
   push:

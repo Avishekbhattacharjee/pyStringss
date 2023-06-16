@@ -1,4 +1,4 @@
-name: Packagecreator
+name: Package Creator
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
         run: python setup.py sdist bdist_wheel
 
       - name: Publish package
-        uses: pypa/gh-action-pypi-publish@release-v1
+        uses: pypa/gh-action-pypi-publish@master
         with:
           username: ${{ secrets.PYPI_USERNAME }}
           password: ${{ secrets.PYPI_PASSWORD }}

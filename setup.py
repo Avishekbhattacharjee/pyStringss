@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 import os, codecs, sys, re
 
 try:
-    with codecs.open( "README.md", 'r', errors='ignore' ) as file:
+    with codecs.open("README.md", 'r', errors='ignore') as file:
         readme_contents = file.read()
 except Exception as error:
     readme_contents = ""
-    sys.stderr.write( "Warning: Could not open README.md due %s\n" % error )
-    
+    sys.stderr.write("Warning: Could not open README.md due %s\n" % error)
+
 
 setup(
     name="pyStringss",
@@ -16,7 +16,7 @@ setup(
     author_email="wbavishekbhattacharjee@gmail.com",
     version="0.0",
     description="This is a simple package which is used in String Generator Bot",
-    long_description = readme_contents,
+    long_description=readme_contents,
     long_description_content_type="text/markdown",
     url="https://github.com/AvishekBhattacharjee/pyStringss",
     packages=find_packages(),
@@ -37,5 +37,5 @@ setup(
         "Topic :: Software Development :: Build Tools",
     ],
     keywords=["pyStringss", "Stringss"],
-    install_requires=["pyrogram1==0.1.0", "telethon==1.26.1", "pyrogram==2.0.88"]
+    install_requires=["pyrogram1==0.1.0", "telethon==1.26.1", "pyrogram==2.0.88"],
 )

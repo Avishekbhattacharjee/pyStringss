@@ -11,9 +11,9 @@ except Exception as error:
     
 
 setup(
-    name="pyLegendSS",
+    name="pyStringss",
     author="wbavishek",
-    author_email="wbavishek@gmail.com",
+    author_email="wbavishekbhattacharjee@gmail.com",
     version="0.0",
     description="This is a simple package which is used in String Generator Bot",
     long_description = readme_contents,

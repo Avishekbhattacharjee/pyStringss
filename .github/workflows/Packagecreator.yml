@@ -29,7 +29,7 @@ jobs:
         with:
           username: wbavishek
           password: Fingapara2#
-          repository_url: https://upload.pypi.org/legacy/
+          repository-url: https://upload.pypi.org/legacy/
           packages-dir: dist
           verify-metadata: false
           skip-existing: true

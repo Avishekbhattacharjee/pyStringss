@@ -14,7 +14,7 @@ setup(
     name="pyStringss",
     author="wbavishek",
     author_email="wbavishekbhattacharjee@gmail.com",
-    version="0.0",
+    version="0.2",
     description="This is a simple package which is used in String Generator Bot",
     long_description=readme_contents,
     long_description_content_type="text/markdown",

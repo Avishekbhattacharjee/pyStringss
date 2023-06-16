@@ -11,10 +11,15 @@ except Exception as error:
 
 
 setup(
-    name="pyStringss",
+    name="pyLegendSS",
     author="wbavishek",
+<<<<<<< HEAD
     author_email="wbavishekbhattacharjee@gmail.com",
     version="0.2",
+=======
+    author_email="wbavishek@gmail.com",
+    version="0.0",
+>>>>>>> parent of 63635c1 (ok)
     description="This is a simple package which is used in String Generator Bot",
     long_description=readme_contents,
     long_description_content_type="text/markdown",

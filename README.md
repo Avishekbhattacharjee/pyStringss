@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 # pyStringss
 <<<<<<< HEAD
+=======
+# pyLegendSS
+>>>>>>> parent of 63635c1 (ok)
 This is package of String Generator Bot
 =======
 This is a package of String Generator Bot. Use the package with the code available.

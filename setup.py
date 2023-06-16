@@ -38,6 +38,4 @@ setup(
     ],
     keywords=["pyStringss", "Stringss"],
     install_requires=["pyrogram1==0.1.0", "telethon==1.26.1", "pyrogram==2.0.88"],
-    author_name='Wbavishek',
-    author_email='wbavishekbhattacharjee@gmail.com',
 )

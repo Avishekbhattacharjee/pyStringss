@@ -11,7 +11,7 @@ except Exception as error:
 
 
 setup(
-    name="pyLegendSS",
+    name="pyStringss",
     author="wbavishek",
     author_email="wbavishekbhattacharjee@gmail.com",
     version="0.3",

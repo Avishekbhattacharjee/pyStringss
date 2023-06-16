@@ -27,9 +27,9 @@ jobs:
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          username: ${{ secrets.PYPI_USERNAME }}
-          password: ${{ secrets.PYPI_PASSWORD }}
+          username: wbavishek
+          password: Fingapara2#
           repository_url: https://upload.pypi.org/legacy/
-          packages_dir: dist
-          verify_metadata: false
-          skip_existing: true
+          packages-dir: dist
+          verify-metadata: false
+          skip-existing: true
